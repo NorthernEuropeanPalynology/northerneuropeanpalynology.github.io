@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+<title>NEPal - Automated pollen analysis</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+    }
+    .Content{
+        font-family: 'Arial';
+        width: 75%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    #fileInput {
+        display: none;
+    }
+    #fileLabel {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: #460e0e;
+        cursor: pointer;
+    }
+    #ContainerList{
+        min-height: 400px;
+        max-height: 400px;
+        background-color: #e9ecf0;
+    }
+    #imageContainer {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(8,1fr); /* Responsive grid with minimum item width */
+        gap: 20px;
+        margin-top: 20px;
+        overflow-y: scroll;
+        max-height: 360px;
+    }
+    .imageBox {
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .deleteIcon {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        width: 15px;
+        height: 15px;
+        background-color: #dbd7d7;
+        color: #828687;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 50%;
+        display: block; /* Initially hidden */
+        cursor: pointer;
+        text-align: center;
+        line-height: 15px;
+    }    
+    .uploadedImage {
+        max-width: 100%;
+        display: block;
+    }
+    .fileName {
+        padding: 5px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-top: 1px solid #ddd;
+        font-size: 10px; /* Adjust the font size */
+    }
+    .fileInput{
+        border-radius: 5 px;
+    }
+    .barChart{
+        max-width: 10;
+        max-height: 50;
+    }
+
+</style>
+</head>
+<body>
+    <div class = "Content">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.15.0"></script>
+        <script src = "model.js"></script>
+        <script src = "graph.js"></script>
+        <h1>Automated Pollen Classification (von Allmen et al., 2024)</h1>
+        <p>This basic template helps you to test whether different supplemented images will correctly be classified by the model trained in von Allmen et al. (2024) for a few taxa important for early post glacial period (i.e., Apiaceae, Artemisia, Betula, Chenopodiaceae, Cyperaceae,
+            Helianthemum, Pinus, Poaceae, Salix), diverse non-pollen palynomorphs (i.e.,), as well as other proxies (i.e., Lycopodium)</p>
+        <br>
+        <script type="text/javascript" src="inputImage.js"></script>
+        <input type="file" id="fileInput" accept="image/*" multiple onchange="loadFiles(event)">
+        <label for="fileInput" id="fileLabel">Select Files</label>
+        <div id = ContainerList><div id="imageContainer"></div></div>
+        <br>
+        <text>Images Uploaded: </text> <text id="imagesUploaded">0</text>
+    </div>
+
+    <div class = "Content">
+        <h2>Automated Analysis</h2>
+        <canvas id="barChart" width="400" height="300"></canvas>
+    </div>
+</body>
+</html>

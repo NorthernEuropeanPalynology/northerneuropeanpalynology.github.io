@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEPal - Nothern European Palynology Database</title>
+<style>
+    /* Style for tabs */
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+    }
+    .Content{
+        font-family: 'Arial';
+        width: 75%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .tab {
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    .tab button:disabled{
+        background-color: #828687;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick=" location.href = '../index.html';">Home</button>
+    <button class="tablinks" disabled>Open Library</button>
+    <button class="tablinks" onclick="location.href = '../classification/classification.html';">Classification</button>
+    <button class="tablinks" onclick="location.href = '../object_detection/OD.html';">Object Detection</button>
+    <button class="tablinks" onclick="location.href = '../automated_analysis/analysis.html';">Automated Analysis</button>
+    <button class="tablinks" onclick="openTab(event, 'tab5')">Contact</button>
+</div>
+
+<div class="Content">
+<h1>Image Library</h1>
+<p>We are working hard right now to build up this webpage. Many features are therfore still under construction. (last updated: 10/04/2024)</p>
+<img src="../construction.jpg" alt="Construction ongoing!">
+</body>
+</html>

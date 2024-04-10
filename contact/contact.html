@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEPal - Nothern European Palynology Database</title>
+<style>
+    /* Style for tabs */
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+    }
+    .Content{
+        font-family: 'Arial';
+        width: 75%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .tab {
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    .tab button:disabled{
+        background-color: #828687;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick=" location.href = '../index.html';">Home</button>
+    <button class="tablinks" onclick=" location.href = '../image_library/library.html';">Open Library</button>
+    <button class="tablinks" onclick="location.href = '../classification/classification.html';">Classification</button>
+    <button class="tablinks" onclick="location.href = '../object_detection/OD.html';">Object Detection</button>
+    <button class="tablinks" onclick="location.href = '../automated_analysis/analysis.html';">Automated Analysis</button>
+    <button class="tablinks" disabled>Contact</button>
+</div>
+
+<div class="Content">
+
+<p>
+    PROJECT AND WEBPAGE MANAGER:
+    <br>
+    <img src = "https://media.licdn.com/dms/image/C4E03AQGLA74DLO3nYA/profile-displayphoto-shrink_400_400/0/1652807739895?e=1718236800&v=beta&t=DgBtJmZHuwqb_3sCzg6d1Y5xbQ_zk4yKzkYkjLGJqIA" alt = "Robin von Allmen" width = "200">
+    <br>
+    Robin von Allmen <br>
+    MSc Student in Ecology at Uppsala Universitet <br>
+    E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a><br>
+    ORCID-id: <a href="https://orcid.org/0009-0000-4255-8393">0009-0000-4255-8393</a>
+</p>
+<br>
+<br>
+<p>
+    DATABASE MANAGER:
+    <br>
+    <img src = "https://www.nrm.se/images/18.3b3846bd177cb1482fd142cd/1614686808467/Bjorn_Gedda2.jpg" width = "200">
+    <br>
+    Björn Gedda <br>
+    PhD in Geology, Senior assistant - Palynological Laboratory at Naturhistoriska Riksmuseet <br>
+    E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
+    ORCID-id: <a href = "https://orcid.org/0000-0003-3953-6411">0000-0003-3953-6411</a>
+</p>
+
+</body>
+</html>

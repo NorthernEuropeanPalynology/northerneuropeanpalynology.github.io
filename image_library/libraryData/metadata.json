@@ -1,0 +1,12 @@
+[
+    {
+        "species": "Artemisia vulgaris",
+        "origin" : "reference sample",
+        "university" : "Naturhistoriska Riksmuseet",
+        "metadata": [
+            { "label": "Category", "value": "Mammal" },
+            { "label": "Habitat", "value": "Forest" },
+            { "label": "Conservation Status", "value": "Endangered" }
+          ]
+    }
+]

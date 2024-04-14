@@ -1,0 +1,64 @@
+    /* Style for tabs */
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+    }
+    p{
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .Content{
+        font-family: 'Arial';
+        width: 75%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .tab {
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style for map container */
+    #map-container {
+        width: 80%;
+        height: 400px;
+        margin: 20px auto;
+    }
+
+    /* Style for university pins */
+    .university-pin {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer; 
+    }

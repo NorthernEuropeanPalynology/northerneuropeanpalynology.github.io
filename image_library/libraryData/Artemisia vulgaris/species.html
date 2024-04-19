@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Species Details</title>
+    <!-- <script src="../../speciesDetails.js"></script> -->
+    
+</head>
+<link rel="stylesheet" href="../../speciesStyles.css">
+<body>
+    <div class = "Content">
+        <a href="../../library.html" style="position: absolute; top: 5%; right: 20%;">< Back to Library</a>
+        <h1 id = "taxaName">Pollinium species</h1> 
+        <p></p>
+        <div class = "horizontal-container">
+
+            <div class = "image-container">
+            </div>
+            <div class = "info-container">
+                <div class = "info">
+                    <h3>General Description according to <a href="https://eol.org/">EOL.org</a>:</h3>
+                    <span id="Description" style="text-align: justify;"></span>
+                    <script>
+                        async function fetchText(url, elementId) {
+                            try {
+                                const response = await fetch(url);
+                                const html = await response.text();
+                                
+                                // Regular expression to match text within <p> tags
+                                const regex = /<p>(.*?)<\/p>/g;
+
+                                // Find the first match
+                                const match = html.match(regex)
+                                const speciesDescription = match[0]
+
+                                const cleanedLinksText = speciesDescription.replace(/href="([^"]*)"/g, `href="https://eol.org/$1"`);
+                                document.getElementById(elementId).innerHTML = cleanedLinksText;
+                            } catch (error) {
+                                console.error('Error fetching text:', error);
+                            }
+                        }
+
+                        fetchText("https://eol.org/pages/850415", "Description")
+                    </script>
+
+                    <div class ="imageSlider" id = "imageSlider">
+                        <script>
+                            async function fetchImages(url) {
+                                try {
+                                    const response = await fetch(url);
+                                    const html = await response.text();
+                                    const imageSlider = document.getElementById("imageSlider");
+                                    
+                                    // Regular expression to match text within <p> tags
+                                    const regex = /<img>(.*?)<\/img>/g;
+
+                                    // Find the first match
+                                    let match;
+                                    const maxCounter = 10;
+                                    
+                                    let counter = 0;
+                                    while ((match = regex.exec(html)) !== null && counter < maxCounter) {
+                                        const img = document.createElement('img');
+                                        img.srcset(match);
+                                        imageSlider.appendChild(img);
+                                        console.log(counter)
+
+                                        counter = counter + 1
+                                    }
+
+                                } catch (error) {
+                                    console.error('Error fetching text:', error);
+                                }
+                            }
+
+                            fetchImages("https://eol.org/pages/850415/media");
+                        </script>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- <script>loadSpeciesData(`Artemisia vulgaris`);</script> -->
+        </div>
+
+    </div>
+</body>
+</html>

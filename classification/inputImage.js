@@ -137,8 +137,6 @@ function handleDrop(event) {
 }
 
 
-
-
 function updateImageCount(){
     const valueText = document.getElementById("imagesUploaded");
 

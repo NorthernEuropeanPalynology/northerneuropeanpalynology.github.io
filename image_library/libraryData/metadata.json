@@ -3,10 +3,14 @@
         "species": "Artemisia vulgaris",
         "origin" : "reference sample",
         "university" : "Naturhistoriska Riksmuseet",
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg",
+    "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
         "metadata": [
-            { "label": "Category", "value": "Mammal" },
-            { "label": "Habitat", "value": "Forest" },
-            { "label": "Conservation Status", "value": "Endangered" }
+            { "label": "Family", "value": "Mammal" },
+            { "label": "Genus", "value": "Artemisia" },
+            { "label": "Species", "value": "Artemisia vulgaris" },
+            { "label": "Description", "value": "to be added..." },
+            { "label": "GBIF", "value": "https://www.gbif.org/species/3120946" }
           ]
     }
 ]

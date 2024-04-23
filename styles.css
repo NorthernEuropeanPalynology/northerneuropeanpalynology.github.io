@@ -2,9 +2,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-repeat: repeat;
+    background-repeat:repeat-y;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg");
-    background-size: cover;
+    background-size: contain;
 }
 .background{
     background-color: rgba(99, 171, 160, 0.364);

@@ -23,19 +23,27 @@
             <script src = "graph.js"></script>
             <h1>Automated Pollen Classification (von Allmen et al., 2024)</h1>
             <p>This basic template helps you to test whether different supplemented images will correctly be classified by the model trained in <a href="https://doi.org/10.1016/j.quascirev.2024.108521">von Allmen et al. (2024) </a> for a few taxa important for early post glacial period (i.e., Apiaceae, Artemisia, Betula, Chenopodiaceae, Cyperaceae,
-                Helianthemum, Pinus, Poaceae, Salix), diverse non-pollen palynomorphs (i.e.,NPP classes 1 to 4), as well as other proxies (i.e., Lycopodium)</p>
+                Helianthemum, Pinus, Poaceae, Salix), diverse non-pollen palynomorphs (i.e.,NPP classes 1 to 4), as well as other proxies (i.e., Lycopodium)  
+            </p>
+            <p style="font-weight: bold;">
+                For the model to be able to evaluate your image, make sure that the following applies to your input:
+            </p>
+                <li>The image is cut to the specific object of interest.</li>
+                <li>The format of the image should be squared (1:1).</li>
+                <li>The resolution of the image should be above 120x120 pixels. (strong deviations may result in artifacts through preprocessing steps)</li>
+                <li>The color scheme of the image must be RGB (greyscale and CMYK are not accepted).</li>  
             <br>
             <script type="text/javascript" src="inputImage.js"></script>
             <input type="file" id="fileInput" accept="image/*" multiple onchange="loadFiles(event)">
-            <label for="fileInput" id="fileLabel">Select Files</label>
+            <label for="fileInput" id="fileLabel" style="margin-left: 5%;">Select Files</label>
             <div id = ContainerList><div id="imageContainer"></div></div>
             <br>
-            <text>Images Uploaded: </text> <text id="imagesUploaded">0</text>
+            <text style="margin-left: 5%;">Images Uploaded: </text> <text id="imagesUploaded">0</text>
         </div>
     
 
         <div class = "Content">
-            <h2>Automated Analysis</h2>
+            <h2 style="margin-left: 5%;">Automated Analysis</h2>
             <canvas id="barChart" width="400" height="300"></canvas>
         </div>
     </div>

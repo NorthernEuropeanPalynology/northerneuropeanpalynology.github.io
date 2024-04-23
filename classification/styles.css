@@ -2,9 +2,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg");
-    background-size: cover;
+    background-size: contain;
 }
 .background{
     background-color: rgba(99, 171, 160, 0.364);
@@ -19,6 +19,12 @@ p{
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
+}
+li{
+    text-align: justify;
+    margin-left: 7%;
+    margin-right: 5%;
+    line-height: 1.8;
 }
 .tab {
     align-items: center;
@@ -75,6 +81,8 @@ p{
     min-height: 400px;
     max-height: 400px;
     background-color: #e9ecf0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 #imageContainer {
     padding: 10px;
@@ -124,4 +132,6 @@ p{
 .barChart{
     max-width: 10;
     max-height: 50;
+    margin-left: 5%;
+    margin-right: 5%;
 }

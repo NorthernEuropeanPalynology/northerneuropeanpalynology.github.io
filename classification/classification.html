@@ -21,47 +21,32 @@
             <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.15.0"></script>
             <script src = "model.js"></script>
             <script src = "graph.js"></script>
-            <h1>Automated Pollen Classification (von Allmen et al., 2024)</h1>
-            <p>This basic template helps you to test whether different supplemented images will correctly be classified by the model trained in <a href="https://doi.org/10.1016/j.quascirev.2024.108521">von Allmen et al. (2024) </a> for a few taxa important for early post glacial period (i.e., Apiaceae, Artemisia, Betula, Chenopodiaceae, Cyperaceae,
-                Helianthemum, Pinus, Poaceae, Salix), diverse non-pollen palynomorphs (i.e.,NPP classes 1 to 4), as well as other proxies (i.e., Lycopodium)  
+            <h1>Automated Pollen Classification</h1>
+
+            <p>
+                The most pivotal step towards automated palynology represenents the classification of individual pollen grains. Over the last three decades, there
+                have been tremendous changes in the structure and accuracy of such "classifiers":
             </p>
+            <p style="margin-left: 10%; font-family:'Calibri'; font-style: italic; color:lightslategray; font-size: 120%;">           
+                "Two decades ago, automated classification primarily relied on text and feature-based classifiers. 
+                These traditional methods processed data by extracting handcrafted features or using statistical techniques to analyze text or numerical data. 
+                However, they often struggled with complex, high-dimensional data like images. 
+                CNNs revolutionized automated classification, particularly in image recognition, by enabling the automated extraction of relevant features directly from raw data. 
+                This departure from handcrafted features marked a significant advancement, as CNNs process visual data through layers of interconnected neurons, 
+                mimicking the visual cortex's organization in animals. This breakthrough in deep learning significantly improved classification accuracy and efficiency, 
+                leading to widespread adoption in various fields."
+            </p>
+
             <p style="font-weight: bold;">
-                For the model to be able to evaluate your image, make sure that the following applies to your input:
-            </p>
-                <li>The image is cut to the specific object of interest.</li>
-                <li>The format of the image should be squared (1:1).</li>
-                <li>The resolution of the image should be above 120x120 pixels. (strong deviations may result in artifacts through preprocessing steps)</li>
-                <li>The color scheme of the image must be RGB (greyscale and CMYK are not accepted).</li> 
-                <li style="color: grey; font:italic;">OBS: Remove any text from the images if possible.</li>  
+                On this page we would like to give an overview over the past advancements in classification capabilities for pollen analysis and employ some publicly
+                available models for test purposes.
+            <p>
 
-            <p>For guidance, here are some reference images, downloaded online, which were successfully classified:</p>
-
-            <div class = "referenceImageContainer">
-                <img src="https://phytokeys.pensoft.net/showimg/d200x_566222.jpg" class="referenceImage">
-                <div class="clippedImageContainer">
-                    <img src="https://pollen.blob.core.windows.net/live-cache/1aa005d2-5ddd-4b32-9ed3-a68f9b38318d_2_thumb.jpg" class="clippedImage">
-                </div>
-                <img src="https://oxpollen.azurewebsites.net/images/pollen3.jpg" class="referenceImage">
-                <img src="https://apsa.anu.edu.au/_images/full/76-5-3a_polar_1.jpg" class="referenceImage">
-                <img src="https://apsa.anu.edu.au/_images/full/12-6-18_equatorial_1.jpg" class="referenceImage">
-                <img src="https://keys.landcareresearch.co.nz/nzbeepollen/key/nzbeepollen/media/images/L33068-A-PO-top.jpg" class="referenceImage">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Poaceae_Pollen_Grain.jpg" class="referenceImage">
-                <img src="https://pollen.blob.core.windows.net/live-cache/b26443f3-70ad-49c0-9fbf-43202e00b7ab_2_thumb.jpg" class="referenceImage">
-            </div>
-            <br>
-            <script type="text/javascript" src="inputImage.js"></script>
-            <input type="file" id="fileInput" accept="image/*" multiple onchange="loadFiles(event)">
-            <label for="fileInput" id="fileLabel" style="margin-left: 5%;">Select Files</label>
-            <div id = ContainerList><div id="imageContainer"></div></div>
-            <br>
-            <text style="margin-left: 5%;">Images Uploaded: </text> <text id="imagesUploaded">0</text>
-        </div>
+            <li>In <a href="https://doi.org/10.1016/j.quascirev.2024.108521">von Allmen et al. (2024)</a> we trained a model to recognize 9 pollen types from fossilized archives that are important to register important major
+                vegetation change for this period. You can test the model on your own custom images <a href="./vonAllmen.html">here</a>. For reference, the model was trained on acetolyzed lake sediment 
+                samples, dyed wtih safranine.
+            </li>
     
-
-        <div class = "Content">
-            <h2 style="margin-left: 5%;">Automated Analysis</h2>
-            <canvas id="barChart" width="400" height="300"></canvas>
-        </div>
     </div>
     <div class = "Footer"></div>
 </body>

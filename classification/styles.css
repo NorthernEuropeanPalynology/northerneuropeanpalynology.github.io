@@ -135,3 +135,33 @@ li{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.referenceImageContainer{
+    max-height: 120px;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.referenceImage{
+    height: 120px;
+    width: 120px;
+    max-width: 120px;
+}
+
+.clippedImageContainer{
+    max-width: 120 px;
+    max-height: 120 px;
+    overflow: hidden;
+    position: relative;
+}
+.clippedImage{
+    width: 100 px;
+    height: auto;
+    left: 0;
+    top: 0;
+    position: relative;
+    clip-path: inset(20px, 20px, 20px, 20px);
+}

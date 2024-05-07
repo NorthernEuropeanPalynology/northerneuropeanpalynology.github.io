@@ -1,0 +1,22 @@
+{
+    "newscontainer": [
+      {
+        "imageURL": "https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/New-Product-Launch.png",
+        "newsTitle": "Server Launch",
+        "newsDescription": "The Server at NRM was put into operation on the 6th of May. We are now focusing on implementing seamless data up- and download capabilities to further enhance our services. Stay tuned for more updates as we continue to innovate and improve our systems to better serve you.  ",
+        "newsLink": "",
+        "linkText": "",
+        "linkActive": false,
+        "date" : "05/06/2024"
+      },
+      {
+        "imageURL": "https://kinsta.com/wp-content/uploads/2020/02/submit-website-to-search-engines.jpg",
+        "newsTitle": "Search for collaborators",
+        "newsDescription": "The purpose of this collaboration is to evaluate and construct automated systems in palynology for all concerned research areas. Hence, diverse pollen archives and preparation methods are crucial to us!",
+        "newsLink": "",
+        "linkText": "",
+        "linkActive": false,
+        "date" : "05/01/2024"
+      }
+    ]
+  }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map with Tabs</title>
+    <!-- Include Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+
+        <div class = "background">
+            <div class="tab">
+                <button class="tablinks" onclick="location.href='../index.html';">HOME</button>
+                <button class="tablinks" disabled>ABOUT US</button>
+                <button class="tablinks" onclick=" location.href = '../news/news.html';">NEWS</button>
+                <button class="tablinks" onclick=" location.href = '../image_library/library.html';">OPEN LIBRARY</button>
+                <button class="tablinks" onclick="location.href = '../tools/tools.html';">TOOLS</button>
+                <button class="tablinks" onclick="location.href = '../contact/contact.html';">CONTACT</button>
+                <button class="tablinks">LOGIN</button>
+            </div>
+
+            <div class = "spacer" style = "height: 10px;"> </div>
+            <h1 style="color: white; padding: 0% 12.5% 0% 12.5%;">NEPal - Nothern European Palynology Database</h1>
+            <p style="color: white; padding: 0% 12.5% 0% 12.5%; font-size: large;"> 
+                The Open Plattform for Automated Pollen Analysis
+            </p>
+            <div class = "spacer" style="height: 30px;"> </div>
+            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
+                <h1>ABOUT US</h1>
+                <hr>
+                <p> The aim of this Collaboration is to evaluate existing automated systems in palynology and develop a comprehensive database tailored especially 
+                    for machine learning. While palynology has a long history in natural sciences, it is largely limited by time and required expertise. We, therefore, 
+                    recognize the realized need for automatization, which promises to help scientists minimize invested resources  while being more consistent in its abilities compared with the diverse levels of expertise among palynologists.
+                </p>
+                
+                <h2>Why palynology?</h2>
+                <p>
+                    Palynology plays a crucial role in the food industry by identifying allergenic pollen in food products, aids climatologists in studying present 
+                    and past climate patterns through pollen records, assists forensic scientists in criminal investigations and archaeological site dating through 
+                    pollen analysis, informs studies on human evolution by analyzing ancient pollen deposits, and contributes to agriculture and medicine by studying 
+                    pollen's impact on crops and human health. 
+                    Its multidisciplinary applications highlight its broad significance in scientific research and practical applications.
+                </p>
+            </div>
+            <div class="Content" style="background-color: white; padding: 20px 12.5% 20px 12.5%;">
+                
+                <div style="display: flex; flex-direction: row; gap: 30px">
+                    <div>
+                        <h3>Palynology and Forensic Sciences</h3>
+                        <p>
+                            One of the earliest milestones occurred in the 1950s when palynologists aided in solving criminal cases by analyzing pollen traces on suspects or victims. 
+                            The famous case involving Dr. Arthur Koehler's 
+                            expertise in identifying a specific type of pollen on a murder suspect's clothing showcased palynology's potential in legal settings. Today, pollen 
+                            analysis continues to be a valuable tool in forensic investigations, helping establish links between individuals and crime scenes or providing crucial 
+                            evidence in cold cases. 
+                        </p>
+                    </div>
+                
+                
+                <img src="../lib/images/forensic.PNG" style="max-width: 30%; height: auto;">
+                </div>
+                <hr>
+                <div style="display: flex; flex-direction: row; gap: 30px">
+                    <img src="../lib/images/archeology.PNG" style="max-width: 30%;">
+                    <div>
+                        <h3>Palynology and Archeology</h3>
+                        <p>
+                            The field saw significant development in the mid-20th century when researchers utilized pollen analysis to reconstruct ancient landscapes and study human 
+                            impact on ecosystems. Pioneering studies such as those by Lennart von Post established the foundations for pollen-based paleoecological reconstructions. 
+                            Today, palynologists work hand-in-hand with archaeologists to analyze pollen grains in sediment cores and archaeological sites, shedding light on past 
+                            vegetation, land use patterns, agricultural practices, and societal developments. 
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h3>Palynology and Climatology</h3>
+                <p>
+                    In the 1960s and 1970s, palynologists pioneered the use of pollen records from sediment cores to reconstruct past climate conditions, such as temperature and precipitation levels. These studies provided 
+                    crucial data for climate modeling and understanding long-term climate trends. Today, palynology remains an integral part of climatology, contributing to 
+                    research on climate change impacts, vegetation dynamics, and ecosystem responses to environmental shifts, offering valuable insights into Earth's climatic 
+                    history and future trajectories.
+                </p>
+                <hr>
+                <div style="display: flex; flex-direction: row; gap: 30px">
+                    <img src="../lib/images/food_industry.PNG" style="max-width: 30%;">
+                    <div>
+                        <h3>Palynology in the Food industry</h3>
+                        <p>
+                            In the mid-20th century, palynologists began identifying pollen grains in honey samples to determine their floral sources, establishing methods for 
+                            authenticity and geographic origin verification. Today, palynology is instrumental in detecting allergenic pollen in food products, aiding in labeling 
+                            regulations for allergic consumers. Additionally, pollen analysis assists in tracing pollen contaminants in food processing environments, contributing 
+                            to maintaining hygiene and product integrity across the food supply chain.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h3>Palynolgoy and Biology</h3>
+                <p>
+                    Early studies in the late 19th and early 20th centuries by botanists like Friedrich Hermann Gustav Reinsch laid the groundwork for pollen morphology studies, 
+                    linking pollen characteristics to plant taxonomy and evolutionary relationships. Palynology's contributions to modern biology include pollen analysis in plant 
+                    reproductive biology studies, pollen-mediated gene flow assessments in crop breeding, and pollen-based ecological studies to understand plant-pollinator 
+                    interactions and ecosystem dynamics. 
+                </p>
+                <hr>
+                <h3>Palynology and Medicine</h3>
+                <p>
+                    Aerobiology, particularly in the context of real-time pollen monitoring and warning systems, is incredibly relevant in the medical system for managing 
+                    allergies and respiratory conditions. These systems use advanced pollen monitoring technologies, such as pollen counting stations and airborne pollen 
+                    sensors, to track pollen levels in the atmosphere. By providing real-time data on pollen concentrations, these systems help individuals with allergies 
+                    and respiratory conditions plan their activities and take preventive measures, such as adjusting medication or avoiding outdoor exposure during peak pollen times. 
+                </p>
+            </div>
+            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
+                <h1>PORTFOLIO</h1>
+                <hr>
+            </div>
+            <div class = "spacer" style="height: 30px;"> </div>
+        </div>
+        <div class="Footer">
+            <div class = "spacer" style="height: 20px;"> </div>
+            <div class="row">
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../news/news.html'">NEWS</h3>
+                    <hr style="width:20%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../information/about.html#:~:text=Automated%20Pollen%20Analysis-,ABOUT%20US,-The%20aim%20of'">ABOUT US</h3>
+                    <hr style="width:33%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../contact/contact.html'">CONTACT</h3>
+                    <hr style="width:32%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="linkBox">
+                        <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024" class = "a1">Newsletter</a>
+                        <br style="line-height: 20px;">
+                        <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References" class = "a1">Publications</a>
+                        <br>
+                        <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen" class = "a1">External References</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="linkBox">
+                        <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a" class = "a1">Why Palynology?</a>
+                        <br>
+                        <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS" class = "a1">Portfolio</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p style="margin: 0%;">
+                        Data Manager: Björn Gedda <br>
+                        E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
+                        <p style="line-height: 50px;"></p>
+
+                        Project Manager: Robin von Allmen <br/>
+                        E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class = "spacer" style="height: 40px;"> </div>
+        </div>
+        
+
+    </body>
+</html>

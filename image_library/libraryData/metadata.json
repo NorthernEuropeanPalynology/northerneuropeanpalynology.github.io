@@ -1,16 +1,93 @@
 [
     {
         "species": "Artemisia vulgaris",
-        "origin" : "reference sample",
-        "university" : "Naturhistoriska Riksmuseet",
-        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg",
-    "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
-        "metadata": [
-            { "label": "Family", "value": "Mammal" },
-            { "label": "Genus", "value": "Artemisia" },
-            { "label": "Species", "value": "Artemisia vulgaris" },
-            { "label": "Description", "value": "to be added..." },
-            { "label": "GBIF", "value": "https://www.gbif.org/species/3120946" }
-          ]
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
+        "metadata": {
+            "family" : "Asteraceae",
+            "genus"  : "Artemisia",
+            "species" : "Artemisia vulgaris",
+            "pollenType" : "Artemisia",
+            "origin" : "Sweden",
+            "collaborator" : "NRM",
+            "date" : "Unknown",
+            "description" : "to be added...",
+            "GBIF"  : "https://www.gbif.org/species/3120946",
+            "majorAxis" : [23.28, 1.16],
+            "minorAxis" : [19.64, 0.98],
+            "numberOfImages": 1005
+        }
+    },
+    {
+        "species": "Alnus incana",
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
+        "metadata": {
+            "family" : "Betulaceae",
+            "genus"  : "Alnus",
+            "species" : "Alnus incana",
+            "pollenType" : "Alnus",
+            "origin" : "Sweden",
+            "collaborator" : "NRM",
+            "date" : "Unknown",
+            "description" : "to be added...",
+            "GBIF"  : "https://www.gbif.org/species/3120946",
+            "majorAxis" : [25.39, 1.27],
+            "minorAxis" : [22.26, 1.11],
+            "numberOfImages": 1005
+        }
+    },
+    {
+        "species": "Corylus avellana",
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
+        "metadata": {
+            "family" : "Betulaceae",
+            "genus"  : "Corylus",
+            "species" : "Corylus avellana",
+            "pollenType" : "Corylus",
+            "origin" : "Sweden",
+            "collaborator" : "NRM, UU",
+            "date" : "13.04.2024",
+            "description" : "to be added...",
+            "GBIF"  : "https://www.gbif.org/species/3120946",
+            "majorAxis" : [0, 0],
+            "minorAxis" : [0, 0],
+            "numberOfImages": 1005
+        }
+    },
+    {
+        "species": "Salix caprea",
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
+        "metadata": {
+            "family" : "Salicaceae",
+            "genus"  : "Salix",
+            "species" : "Salix caprea",
+            "pollenType" : "Salix",
+            "origin" : "Sweden",
+            "collaborator" : "NRM, UU",
+            "date" : "13.04.2024",
+            "description" : "to be added...",
+            "GBIF"  : "https://www.gbif.org/species/3120946",
+            "majorAxis" : [18.47, 0.92],
+            "minorAxis" : [16.61, 0.83],
+            "numberOfImages": 1005
+        }
+    },
+
+    {
+        "species": "Betula pendula",
+        "pictures": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg", "image16.jpg"],
+        "metadata": {
+            "family" : "Betulaceae",
+            "genus"  : "Betula",
+            "species" : "Betula pendula",
+            "pollenType" : "Betula alba-type",
+            "origin" : "Sweden",
+            "collaborator" : "NRM",
+            "date" : "15.05.2024",
+            "description" : "to be added...",
+            "GBIF"  : "https://www.gbif.org/species/3120946",
+            "majorAxis" : [23.57, 1.18],
+            "minorAxis" : [21.38, 1.07],
+            "numberOfImages": 1005
+        }
     }
 ]

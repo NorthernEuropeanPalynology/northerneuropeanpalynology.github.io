@@ -49,6 +49,13 @@ body{
 p{
   text-align: justify;
   text-justify:inter-word;
+  font-family: Calibri;
+  font-size: 20px;
+}
+h3{
+    font-size: 25px;
+    font-family: Calibri;
+    font-weight: bold;
 }
 .a1{
     color: rgb(47, 49, 53);

@@ -1,7 +1,7 @@
 // Function to load species data from metadata.json
 async function loadSpeciesData() {
     try {
-      const response = await fetch("libraryData/metadata.json");
+      const response = await fetch("./libraryData/metadata.json");
       const data = await response.json();
       renderItems(data);
     } catch (error) {
@@ -19,14 +19,41 @@ async function loadSpeciesData() {
   
       // Create item content
       const content = `
-        <div class="species-name-container">
-          <span class="species-name">${item.species}</span>
+        <div class="species-info" style="line-height : 30px;">
+          <b class="species-name" style="font-style : italic; font-size:20px;">${item.species}</b>
+          <br>
+          <span class="family" >${item.metadata.family}</span>
+          <br>
+          <span class="pollen-type" >${item.metadata.pollenType}</span>
+          <br>
+          <span class="collaborator" >${item.metadata.collaborator}</span>
+          <br>
+          <span class="collaborator" >${item.metadata.origin}, ${item.metadata.date}</span>
         </div>
-        <div>${item.origin}</div>
-        <div>${item.university}</div>
-        <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+
+        <div class="imageBox">
+          <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+          <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+          <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+          <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+          <img src="libraryData/${item.species}/preview.jpg" alt="${item.species}">
+        </div>
+
+        <div class="meassurements" style = "line-height : 30px;">
+          <b class="majorAxis" >Major Axis: ${item.metadata.majorAxis[0]}µm</b>
+          <br>
+          <span class="majorAxisRange" >95% range: &plusmn  ${item.metadata.majorAxis[1]}µm</span>
+          <br>
+          <b class="minorAxis" >Minor Axis: ${item.metadata.minorAxis[0]}µm</b>
+          <br>
+          <span class="minorAxisRange" >95% range: &plusmn  ${item.metadata.minorAxis[1]}µm </span>
+          <br>
+          <b class="numberImages" >Number of images: ${item.metadata.numberOfImages}</b>
+        </div>
+        
       `;
       itemDiv.innerHTML = content;
+      itemDiv.style = "padding: 5px 20px 5px 20px;";
       speciesContainer.appendChild(itemDiv);
   
       // Attach click event listener to species name

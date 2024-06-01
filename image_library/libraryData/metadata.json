@@ -14,7 +14,8 @@
             "GBIF"  : "https://www.gbif.org/species/3120946",
             "majorAxis" : [23.28, 1.16],
             "minorAxis" : [19.64, 0.98],
-            "numberOfImages": 1005
+            "numberOfImages": 1005,
+            "previewImages": ["Object_1.jpg", "Object_86.jpg", "Object_95.jpg", "Object_98.jpg", "Object_122.jpg"]
         }
     },
     {
@@ -32,7 +33,8 @@
             "GBIF"  : "https://www.gbif.org/species/3120946",
             "majorAxis" : [25.39, 1.27],
             "minorAxis" : [22.26, 1.11],
-            "numberOfImages": 1005
+            "numberOfImages": 1005,
+            "previewImages": ["Object_3.jpg", "Object_6.jpg", "Object_16.jpg", "Object_65.jpg", "Object_5632.jpg"]
         }
     },
     {
@@ -50,7 +52,8 @@
             "GBIF"  : "https://www.gbif.org/species/3120946",
             "majorAxis" : [0, 0],
             "minorAxis" : [0, 0],
-            "numberOfImages": 1005
+            "numberOfImages": 1005,
+            "previewImages": ["Object_7.jpg", "Object_914.jpg", "Object_930.jpg", "Object_952.jpg", "Object_954.jpg"]
         }
     },
     {
@@ -68,7 +71,8 @@
             "GBIF"  : "https://www.gbif.org/species/3120946",
             "majorAxis" : [18.47, 0.92],
             "minorAxis" : [16.61, 0.83],
-            "numberOfImages": 1005
+            "numberOfImages": 1005,
+            "previewImages": ["Object_3257.jpg", "Object_3265.jpg", "Object_3282.jpg", "Object_3307.jpg", "Object_3351.jpg"]
         }
     },
 
@@ -87,7 +91,8 @@
             "GBIF"  : "https://www.gbif.org/species/3120946",
             "majorAxis" : [23.57, 1.18],
             "minorAxis" : [21.38, 1.07],
-            "numberOfImages": 1005
+            "numberOfImages": 1005,
+            "previewImages": ["Object_40.jpg", "Object_51.jpg", "Object_60.jpg", "Object_67.jpg", "Object_7213.jpg"]
         }
     }
 ]

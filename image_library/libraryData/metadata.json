@@ -5,7 +5,7 @@
         "metadata": {
             "family" : "Asteraceae",
             "genus"  : "Artemisia",
-            "species" : "Artemisia vulgaris",
+            "species" : "vulgaris",
             "pollenType" : "Artemisia",
             "origin" : "Sweden",
             "collaborator" : "NRM",
@@ -24,7 +24,7 @@
         "metadata": {
             "family" : "Betulaceae",
             "genus"  : "Alnus",
-            "species" : "Alnus incana",
+            "species" : "incana",
             "pollenType" : "Alnus",
             "origin" : "Sweden",
             "collaborator" : "NRM",
@@ -43,7 +43,7 @@
         "metadata": {
             "family" : "Betulaceae",
             "genus"  : "Corylus",
-            "species" : "Corylus avellana",
+            "species" : "avellana",
             "pollenType" : "Corylus",
             "origin" : "Sweden",
             "collaborator" : "NRM, UU",
@@ -62,7 +62,7 @@
         "metadata": {
             "family" : "Salicaceae",
             "genus"  : "Salix",
-            "species" : "Salix caprea",
+            "species" : "caprea",
             "pollenType" : "Salix",
             "origin" : "Sweden",
             "collaborator" : "NRM, UU",
@@ -82,7 +82,7 @@
         "metadata": {
             "family" : "Betulaceae",
             "genus"  : "Betula",
-            "species" : "Betula pendula",
+            "species" : "pendula",
             "pollenType" : "Betula alba-type",
             "origin" : "Sweden",
             "collaborator" : "NRM",

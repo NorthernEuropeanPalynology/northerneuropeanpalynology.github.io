@@ -1,0 +1,32 @@
+[
+    {
+        "image-URL": "quizData/Artemisia001.jpg",
+        "pollenType": "Artemisia",
+        "falseType": {
+            "novice": ["Betula"],
+            "amateur": ["Salix", "Betula"],
+            "intermediate": ["Salix", "Fraxinus excelsior-type", "Ulmus"],
+            "expert": ["Salix", "Fraxinus excelsior-type", "Hedera helix", "Ulmus"]
+        }
+    },
+    {
+        "image-URL": "quizData/Artemisia002.jpg",
+        "pollenType": "Artemisia",
+        "falseType": {
+            "novice": ["Corylus"],
+            "amateur": ["Salix", "Fraxinus excelsior-type"],
+            "intermediate": ["Salix", "Fraxinus excelsior-type", "Ulmus"],
+            "expert": ["Salix", "Fraxinus excelsior-type", "Hedera helix", "Ulmus"]
+        }
+    },
+    {
+        "image-URL": "quizData/Salix001.jpg",
+        "pollenType": "Salix",
+        "falseType": {
+            "novice": ["Betula"],
+            "amateur": ["Betula", "Artemisia"],
+            "intermediate": ["Artemisia", "Fraxinus excelsior-type", "Ulmus"],
+            "expert": ["Artemisia", "Fraxinus excelsior-type", "Hedera helix", "Olea europaea"]
+        }
+    }
+]

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEPal - NEWS</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+    <body>
+
+        <div class = "background">
+            <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+            <div class="tab">
+                <button class="tablinks" onclick="location.href='../index.html';">HOME</button>
+                <button class="tablinks" onclick="location.href = '../information/about.html';">ABOUT US</button>
+                <button class="tablinks" onclick=" location.href = './news/news.html';">NEWS</button>
+                <button class="tablinks" onclick=" location.href = '../image_library/library.html';">OPEN LIBRARY</button>
+                <button class="tablinks" disabled>EDUCATION</button>
+                <button class="tablinks" onclick="location.href = '../tools/tools.html';">TOOLS</button>
+                <button class="tablinks" onclick="location.href = '../contact/contact.html';">CONTACT</button>
+                <button class="tablinks">LOGIN</button>
+            </div>
+
+            <div class = "spacer" style = "height: 10px;"> </div>
+            <h1 style="color: white; padding: 0% 12.5% 0% 12.5%;">NEPal - Northern European Palynology Database</h1>
+            <p style="color: white; padding: 0% 12.5% 0% 12.5%; font-size: large;"> 
+                The Open-Source Plattform for Automated Pollen Analysis
+            </p>
+            <div class = "spacer" style="height: 30px;"> </div>
+            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
+                <h1>POLLEN QUIZ</h1>
+                <hr>
+            </div>
+            <script src="quiz.js"></script>
+            <!-- Fullscreen result screen (initially hidden) -->
+            <div class="Content" style="background-color: white; padding: 20px 12.5% 20px 12.5%;">
+                
+                
+                <label>I am a</label>
+                <select id="difficulty" onchange="document.querySelector('.progress-container').style.opacity = 1;">
+                    <option value="">--Please choose an option--</option>
+                    <option value = "expert">Expert</option>
+                    <option value = "intermediate">Intermediate</option>
+                    <option value = "amateur">Amateur</option>
+                    <option value = "novice">Novice</option>
+                </select>
+
+                <div class = "spacer" style="height: 20px;"> </div>
+                <div class="quiz" style="display: flex;">
+                    <div id="result-screen">
+                        <h1 id = "result-title"></h1>
+                        <p id = "result-text"></p>
+                        <button onclick="window.location.reload(true);">Try Again!</button>
+                    </div>
+            
+                    <div class = "answers">
+                        <div class = "spacer" style="height: 30px;"> </div>
+                        <div class = "answer-buttons"> 
+                        </div>
+                        <p class="result">Choose a difficulty level!</p>
+                        <br>
+                        <div class="progress-container">
+                            <div class="progress-label"></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 1%;"></div> 
+                                <div class="progress-ticks">
+                                    <div class="tick"></div>
+                                    <div class="tick"></div>
+                                    <div class="tick"></div>
+                                </div>
+                            </div>
+                            <div class="progress-markers">
+                                <span style="position: absolute; left: 20%; transform: translateX(-50%);" >AMATEUR</span>
+                                <span style="position: absolute; left: 50%; transform: translateX(-40%);">INTERMEDIATE</span>
+                                <span style="position: absolute; left: 80%; transform: translateX(-30%);">EXPERT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "spacer" style="width: 5%;"> </div>
+                    <div class = "image-container">
+                        <img id="quiz-img" class="quiz-img">
+                    </div>
+                </div>
+                <div class = "spacer" style="height: 20px;"> </div>
+            </div>
+            <div class = "spacer" style="height: 30px;"> </div>
+        </div>
+        <div class="Footer">
+            <div class = "spacer" style="height: 20px;"> </div>
+            <div class="row">
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../news/news.html'">NEWS</h3>
+                    <hr style="width:20%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../information/about.html#:~:text=Automated%20Pollen%20Analysis-,ABOUT%20US,-The%20aim%20of'">ABOUT US</h3>
+                    <hr style="width:33%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+                <div class="column">
+                    <h3 style="line-height: 5px;" onclick="location.href='../contact/contact.html'">CONTACT</h3>
+                    <hr style="width:32%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="linkBox">
+                        <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024">Newsletter</a>
+                        <br style="line-height: 20px;">
+                        <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References">Publications</a>
+                        <br>
+                        <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen">External References</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="linkBox">
+                        <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a">Why Palynology?</a>
+                        <br>
+                        <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS">Portfolio</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p style="margin: 0%;">
+                        Data Manager: Björn Gedda <br>
+                        E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
+                        <p style="line-height: 50px;"></p>
+
+                        Project Manager: Robin von Allmen <br/>
+                        E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class = "spacer" style="height: 40px;"> </div>
+        </div>
+        
+
+    </body>
+</html>

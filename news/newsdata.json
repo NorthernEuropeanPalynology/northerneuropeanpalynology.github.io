@@ -1,6 +1,15 @@
 {
     "newscontainer": [
       {
+        "imageURL": "https://free-vectors.net/_ph/1/324677358.jpg",
+        "newsTitle": "Test your Knowledge!",
+        "newsDescription": "As part of the NEPal initiative, we also are encouraged to train researcher, students and private users to identify pollen. We therefore curated an online Quiz testing your knowledge of pollen morphologies. In the future we would like to integrate this approach with our database such that experts can confirm the automated classification results.",
+        "newsLink": "",
+        "linkText": "Continue to Quiz",
+        "linkActive": false,
+        "date" : "20/02/2025"
+      },
+      {
         "imageURL": "https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/New-Product-Launch.png",
         "newsTitle": "Server Launch",
         "newsDescription": "The Server at NRM was put into operation on the 6th of May. We are now focusing on implementing seamless data up- and download capabilities to further enhance our services. Stay tuned for more updates as we continue to innovate and improve our systems to better serve you.  ",

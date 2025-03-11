@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEPal - ABOUT US</title>
-    <!-- Include Leaflet CSS and JS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
@@ -45,9 +42,29 @@
                     Its multidisciplinary applications highlight its broad significance in scientific research and practical applications.
                 </p>
             </div>
+            <script>
+                function adjustLayout() {
+                    const container = document.querySelector(".Content > div"); 
+                    if (window.innerWidth <= 768) {
+                        container.style.flexDirection = "column"; // Stack vertically on small screens
+                        container.style.alignItems = "center"; 
+                        container.style.textAlign = "center"; 
+                    } else {
+                        container.style.flexDirection = "row"; // Side by side on larger screens
+                        container.style.alignItems = "flex-start";
+                        container.style.textAlign = "left";
+                    }
+                }
+
+                // Run on page load
+                adjustLayout();
+
+                // Run when window is resized
+                window.addEventListener("resize", adjustLayout);
+            </script>
             <div class="Content" style="background-color: white; padding: 20px 12.5% 20px 12.5%;">
                 
-                <div style="display: flex; flex-direction: row; gap: 30px">
+                <div>
                     <div>
                         <h3>Palynology and Forensic Sciences</h3>
                         <p>
@@ -58,13 +75,11 @@
                             evidence in cold cases. 
                         </p>
                     </div>
-                
-                
-                <img src="../lib/images/forensic.PNG" style="max-width: 30%; height: auto;">
+                    <img class="illustration" src="../lib/images/forensic.PNG" >
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
-                    <img src="../lib/images/archeology.PNG" style="max-width: 30%;">
+                <div>
+                    <img class="illustration" src="../lib/images/archeology.PNG" >
                     <div>
                         <h3>Palynology and Archeology</h3>
                         <p>
@@ -76,7 +91,7 @@
                     </div>
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
+                <div>
                     <div>
                         <h3>Palynology and Aerobiology</h3>
                         <p>
@@ -87,11 +102,11 @@
                             respond to climate change and landscape alterations.
                         </p>
                     </div>
-                    <img src="../lib/images/aerobiology.png" style="max-width: 30%;">
+                    <img src="../lib/images/aerobiology.png" class="illustration">
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
-                    <img src="../lib/images/climatology.png" style="max-width: 30%;">
+                <div>
+                    <img src="../lib/images/climatology.png" class="illustration">
                     <div>
                         <h3>Palynology and Climatology</h3>
                         <p>
@@ -103,7 +118,7 @@
                     </div>
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
+                <div>
                     <div>
                         <h3>Palynology in the Food industry</h3>
                         <p>
@@ -113,11 +128,11 @@
                             to maintaining hygiene and product integrity across the food supply chain.
                         </p>
                     </div>
-                    <img src="../lib/images/food_industry.PNG" style="max-width: 30%;">
+                    <img src="../lib/images/food_industry.PNG" class="illustration">
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
-                    <img src="../lib/images/biology.png" style="max-width: 30%;">
+                <div>
+                    <img src="../lib/images/biology.png" class="illustration">
                     <div>
                         <h3>Palynology and Biology</h3>
                         <p>
@@ -129,7 +144,7 @@
                     </div>
                 </div>
                 <hr>
-                <div style="display: flex; flex-direction: row; gap: 30px">
+                <div>
                     <div>
                         <h3>Palynology and Medicine</h3>
                         <p>
@@ -139,7 +154,7 @@
                             and respiratory conditions plan their activities and take preventive measures, such as adjusting medication or avoiding outdoor exposure during peak pollen times. 
                         </p>
                     </div>
-                    <img src="../lib/images/allergology.png" style="max-width: 30%;">
+                    <img class="illustration" src="../lib/images/allergology.png">
                 </div>
             </div>
             <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
@@ -187,9 +202,8 @@
                         E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
                         <p style="line-height: 50px;"></p>
 
-                        Project Manager: Robin von Allmen <br/>
+                        Project Manager: Robin von Allmen
                         E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
-
                     </p>
                 </div>
             </div>

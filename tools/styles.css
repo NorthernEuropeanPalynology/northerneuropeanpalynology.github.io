@@ -41,6 +41,16 @@ body{
     margin: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item > img {
+    max-width: 30vb;
+    width: 30%;
+    height: fit-content;
+}
 .Footer{
     position: relative;
     background-color: rgba(99, 171, 160, 1.0);
@@ -49,14 +59,57 @@ body{
 p{
   text-align: justify;
   text-justify:inter-word;
+  font-size: 2.2vb;
 }
 .column {
     justify-content: center;
     float: left;
-    width: 18.5%;
+    width: 18.5vb;
     padding: 0% 2% 0% 2%;
     margin: 0% 1% 0% 1%;
 }
+
+.toolRow{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ justify-content: center;
+}
+
+.toolColumn {
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 5%; 
+    border: 3px solid black; 
+    cursor: pointer;
+    justify-content: center;
+    float: left;
+    width: 15vw;
+    padding: 0% 2% 0% 2%;
+    margin: 0% 1% 0% 1%;
+    height: 22vw;
+}
+
+.toolColumn > img {
+    height: auto;
+    width: 15vw; 
+    max-width: 100%;
+    align-self: center;
+}
+
+.toolColumn > p {
+    bottom: 5%;
+    text-align:center;
+}
+
+.toolColumn > hr {
+    width:80%;
+    text-align:center; 
+    height:2px; 
+    border-color: black; 
+    background-color: black;
+}
+
 .row:after {
     content: "";
     justify-content: center;
@@ -70,4 +123,28 @@ p{
 .a1{
     color: rgb(47, 49, 53);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .Content .item{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Content .item > img {
+        width: 80%; /* Reduce width for smaller screens */
+        max-width: 400px; /* Prevent it from becoming too large */
+        height: auto;
+    }
+
+    .toolRow{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .toolColumn{
+        width: 60%;
+        height: 65%;
+    }
 }

@@ -23,9 +23,9 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1.5vb 1.5vw;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 2vb;
 }
 
 .tab button:hover {
@@ -41,6 +41,13 @@ body{
     margin: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+.Content > div{
+    display: flex; 
+    flex-direction: row; 
+    gap: 30px
+}
+
 .Footer{
     position: relative;
     background-color: rgba(99, 171, 160, 1.0);
@@ -52,11 +59,37 @@ p{
   font-family: Calibri;
   font-size: 20px;
 }
-h3{
-    font-size: 25px;
+h1{
+    font-size: 5vw;
+}
+
+.Content > h1{
+    font-size: 4vw;
+}
+
+.Content > h3{
+    font-size: 4vb;
     font-family: Calibri;
     font-weight: bold;
 }
+
+.Content > p {
+    font-size: 2.8vb;
+}
+
+.Content > div > div > p{
+    font-size: 2.8vb;
+    font-family: Calibri;
+}
+
+.column > p {
+    font-size: 2vb;
+}
+
+.column > div > a{
+    font-size: 2vb;
+}
+
 .a1{
     color: rgb(47, 49, 53);
     text-decoration: none;
@@ -76,4 +109,25 @@ h3{
 }
 .linkBox{
     line-height: 38px;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 30vw; /* Limits the maximum width to 30% of the viewport */
+    height: auto;  /* Maintains the correct aspect ratio */
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .Content > div {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center elements */
+        text-align: center; /* Improve readability */
+    }
+
+    .illustration {
+        width: 80%; /* Reduce width for smaller screens */
+        max-width: 400px; /* Prevent it from becoming too large */
+    }
 }

@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         newsItem.classList.add("newsItem");
   
         const image = document.createElement("img");
+        image.className = "illustration"
         image.src = news.imageURL;
         image.alt = "News Image";
 

@@ -41,14 +41,16 @@ body{
     margin: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.newsItem img{
-    width: 25%;
-}
 .newsItem {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 20px 0 20px 0;
+}
+.illustration{
+    max-width: 100%;
+    width: 25%;
+    height:fit-content;
 }
 .info{
     line-height: 1.2;
@@ -95,4 +97,20 @@ p{
 }
 .linkBox{
     line-height: 38px;
+}
+
+@media (max-width: 768px) {
+    .newsItem{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsItem > p{
+        font-size: 2vb;
+    }
+
+    .illustration {
+        width: 80%; /* Reduce width for smaller screens */
+        max-width: 400px; /* Prevent it from becoming too large */
+    }
 }

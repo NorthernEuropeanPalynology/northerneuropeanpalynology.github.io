@@ -1,10 +1,21 @@
-/* Style for tabs */
 body{
     margin: 0;
     padding: 0;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg");
     background-size: contain;
     overflow-x: hidden;
+}
+body .title{
+    padding: 0% 12.5% 0% 12.5%;
+    font-family:serif;
+    color: white;
+    font-size: 3rem;
+}
+body .subtitle{
+    padding: 0% 12.5% 0% 12.5%;
+    font-family:serif;
+    color: white;
+    font-size: 1.5rem;
 }
 .background{
     background-color: rgba(99, 171, 160, 0.364);
@@ -15,11 +26,15 @@ body{
   text-decoration: none;
 }
 .tab {
-    align-items: center;
-    padding: 1% 10% 0% 20%;
-    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12.5% 0 12.5%;
     border: 1px solid #ccc;
     background-color: rgba(99, 171, 160, 1.0);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .tab button {
     background-color: inherit;
@@ -40,27 +55,66 @@ body{
     background-color: #ccc;
 }
 
-.Content{
-    font-family: 'Arial';
-    margin: 0;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+p{
+  text-align: justify;
+  text-justify:inter-word;
+  font-family: Calibri;
+  font-size: 1rem;
 }
+
+h1{
+    font-size: 2.5rem;
+}
+
+.Content{
+  padding: 20px 12.5% 20px 12.5%;
+}
+.ABOUTPageContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.ABOUTPageContent h1{
+    font-size: 2.5rem
+}
+
+.ABOUTPageContent h3{
+    font-size: 2rem;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.ABOUTPageContent > div {
+  display: flex;
+  flex-direction: column; 
+}
+
+.ABOUTPageContent img{
+  max-width: 40%;
+  height:fit-content;
+  align-self: center;
+  margin: 0 3% 0 3%
+}
+
 .Footer{
     position: relative;
     background-color: rgba(99, 171, 160, 1.0);
-    padding: 0% 15% 0% 15%
+    padding: 0% 15% 0% 15%;
 }
 
 /* Styles for news container */
 .newsContainer {
-    height: 150px;
+    height: 170px;
     width: 100%;
     overflow: hidden;
+    margin: 0 0 5% 0;
   }
 
 .newsItem {
     position: absolute;
-    display: block;
+    display: flex;
+    max-height: 160px;
+    flex-direction: row;
     width: 72%;
     padding: 20px;
     background-color: rgb(45, 55, 53);
@@ -68,6 +122,8 @@ body{
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     transform: translateX(100%);
+    overflow-y:scroll;
+    scrollbar-darkshadow-color: darkslategrey;
 }
 .info p{
   margin-bottom: 6px;
@@ -89,7 +145,8 @@ body{
 .newsItem img {
   float: left;
   margin-right: 20px;
-  max-width: 200px;
+  max-height: 110px;
+  width: auto;
 }
   
 .newsItem h2 {
@@ -136,13 +193,21 @@ body{
 }
 
 /* Style for map container */
-#map-container {
+.map-container {
     display: flex; 
     flex-direction: row; 
     align-items: flex-start;
     width: 100%;
-    height: 400px;
     padding: 20px 0 20px 0;
+}
+
+#map{
+  height: 400px;
+  width: 100%;
+}
+
+#collborators{
+  margin: 3% 0 3% 0;
 }
 
 /* Style for university pins */
@@ -153,39 +218,96 @@ body{
     border-radius: 50%;
     cursor: pointer; 
 }
-svg{
-    width: 160px;
-    height: 160px;
-}
 .column {
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     float: left;
     width: 18.5%;
+    height: auto;
     padding: 0% 2% 0% 2%;
     margin: 0% 1% 0% 1%;
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 5%; 
+    border: 3px solid black; 
+    cursor: pointer;
 }
-.row:after {
-    content: "";
-    justify-content: center;
-    display: table;
-    clear: both;
+.column img{
+  height: auto;
+  max-width: 80%;
 }
-.linkBox{
-    line-height: 38px;
+.column svg{
+  height: auto;
+  max-width: 80%;
+}
+.column .label{
+  max-height: 3rem;
+  align-items: center;
+}
+.column .label p{
+  font-size: 80%;
+}
+.row{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.FooterRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.FooterColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @media (max-width: 768px) {
+  .ABOUTPageContent > div {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+  }
+  .ABOUTPageContent > div img{
+    max-width: 80%;
+  }
+
+  .newsContainer{
+    height: 220px;
+  }
+
   .newsItem{
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      max-height: 200px;
+  }
+
+  .map-container{
+    flex-direction: column;
   }
 
   .newsItem > p{
       font-size: 2vb;
   }
 
-  .illustration {
-      width: 20%; /* Reduce width for smaller screens */
-      max-width: 200px; /* Prevent it from becoming too large */
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
+
+  .column{
+    width: 80%;
+    margin: 2% 0 2% 0
+  }
+
+  .illustration {
+      width: 80%; 
+      max-width: 400px; 
+  }
+} 
+

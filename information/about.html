@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEPal - ABOUT US</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/lib/code/styles.css">
 </head>
     <body>
 
-        <div class = "background">
-            <div class="tab">
+        <div class="tab">
                 <button class="tablinks" onclick="location.href='../index.html';">HOME</button>
                 <button class="tablinks" disabled>ABOUT US</button>
                 <button class="tablinks" onclick=" location.href = '../news/news.html';">NEWS</button>
                 <button class="tablinks" onclick=" location.href = '../image_library/library.html';">OPEN LIBRARY</button>
                 <button class="tablinks" onclick="location.href = '../tools/tools.html';">TOOLS</button>
                 <button class="tablinks" onclick="location.href = '../contact/contact.html';">CONTACT</button>
-                <button class="tablinks">LOGIN</button>
-            </div>
-
-            <div class = "spacer" style = "height: 10px;"> </div>
-            <h1 style="color: white; padding: 0% 12.5% 0% 12.5%;">NEPal - Northern European Palynology Database</h1>
-            <p style="color: white; padding: 0% 12.5% 0% 12.5%; font-size: large;"> 
+        </div>
+        <div class = "background">
+            <div class = "spacer" style = "height: 40px;"> </div>
+            <h1 class="title">NEPal - Northern European Palynology Database</h1>
+            <p class="subtitle"> 
                 The Open-Source Plattform for Automated Pollen Analysis
             </p>
             <div class = "spacer" style="height: 30px;"> </div>
-            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
+            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;">
                 <h1>ABOUT US</h1>
                 <hr>
                 <p> The aim of this Collaboration is to evaluate existing automated systems in palynology and develop a comprehensive database tailored especially 
@@ -33,7 +31,7 @@
                     recognize the realized need for automatization, which promises to help scientists minimize invested resources  while being more consistent in its abilities compared with the diverse levels of expertise among palynologists.
                 </p>
                 
-                <h2>Why palynology?</h2>
+                <h3>Why palynology?</h3>
                 <p>
                     Palynology plays a crucial role in the food industry by identifying allergenic pollen in food products, aids climatologists in studying present 
                     and past climate patterns through pollen records, assists forensic scientists in criminal investigations and archaeological site dating through 
@@ -62,9 +60,8 @@
                 // Run when window is resized
                 window.addEventListener("resize", adjustLayout);
             </script>
-            <div class="Content" style="background-color: white; padding: 20px 12.5% 20px 12.5%;">
-                
-                <div>
+            <div class="Content" style="background-color: white;">
+                <div class = "ABOUTPageContent">
                     <div>
                         <h3>Palynology and Forensic Sciences</h3>
                         <p>
@@ -78,7 +75,7 @@
                     <img class="illustration" src="../lib/images/forensic.PNG" >
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <img class="illustration" src="../lib/images/archeology.PNG" >
                     <div>
                         <h3>Palynology and Archeology</h3>
@@ -91,7 +88,7 @@
                     </div>
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <div>
                         <h3>Palynology and Aerobiology</h3>
                         <p>
@@ -105,7 +102,7 @@
                     <img src="../lib/images/aerobiology.png" class="illustration">
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <img src="../lib/images/climatology.png" class="illustration">
                     <div>
                         <h3>Palynology and Climatology</h3>
@@ -118,7 +115,7 @@
                     </div>
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <div>
                         <h3>Palynology in the Food industry</h3>
                         <p>
@@ -131,7 +128,7 @@
                     <img src="../lib/images/food_industry.PNG" class="illustration">
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <img src="../lib/images/biology.png" class="illustration">
                     <div>
                         <h3>Palynology and Biology</h3>
@@ -144,7 +141,7 @@
                     </div>
                 </div>
                 <hr>
-                <div>
+                <div class = "ABOUTPageContent">
                     <div>
                         <h3>Palynology and Medicine</h3>
                         <p>
@@ -157,54 +154,42 @@
                     <img class="illustration" src="../lib/images/allergology.png">
                 </div>
             </div>
-            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
+            <div class="Content" style="background-color: rgb(64, 85, 81); color:white;">
                 <h1>PORTFOLIO</h1>
                 <hr>
             </div>
             <div class = "spacer" style="height: 30px;"> </div>
         </div>
-        <div class="Footer">
+
+        <div class = "Footer">
             <div class = "spacer" style="height: 20px;"> </div>
-            <div class="row">
-                <div class="column">
+            <div class="FooterRow">
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../news/news.html'">NEWS</h3>
                     <hr style="width:20%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                    <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024" class = "a1">Newsletter</a>
+                    <br style="line-height: 20px;">
+                    <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References" class = "a1">Publications</a>
+                    <br>
+                    <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen" class = "a1">External References</a>
                 </div>
-                <div class="column">
+
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../information/about.html#:~:text=Automated%20Pollen%20Analysis-,ABOUT%20US,-The%20aim%20of'">ABOUT US</h3>
                     <hr style="width:33%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                    <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a" class = "a1">Why Palynology?</a>
+                    <br>
+                    <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS" class = "a1">Portfolio</a>
                 </div>
-                <div class="column">
+
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../contact/contact.html'">CONTACT</h3>
                     <hr style="width:32%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="linkBox">
-                        <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024" class = "a1">Newsletter</a>
-                        <br style="line-height: 20px;">
-                        <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References" class = "a1">Publications</a>
-                        <br>
-                        <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen" class = "a1">External References</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="linkBox">
-                        <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a" class = "a1">Why Palynology?</a>
-                        <br>
-                        <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS" class = "a1">Portfolio</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <p style="margin: 0%;">
-                        Data Manager: Björn Gedda <br>
-                        E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
-                        <p style="line-height: 50px;"></p>
-
-                        Project Manager: Robin von Allmen
-                        E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
-                    </p>
+                    <a style="margin: 0%;">
+                            Data Manager:<br>Björn Gedda<br><a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
+                            <p style="line-height: 10px;"></p>
+                            Project Manager:<br>Robin von Allmen<br><a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
+                    </a>
                 </div>
             </div>
             <div class = "spacer" style="height: 40px;"> </div>

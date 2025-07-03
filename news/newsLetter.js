@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const newsContainer = document.getElementById("newsContainer");
+    const newsList = document.getElementById("newsList");
     // Array to store news data
     let newsData = [];
     console.log("here");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function renderNews() {
       newsData.forEach((news, index) => {
         const newsItem = document.createElement("div");
-        newsItem.classList.add("newsItem");
+        newsItem.classList.add("newsListItem");
   
         const image = document.createElement("img");
         image.className = "illustration"
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
         info.appendChild(title);
         info.appendChild(description);
         newsItem.appendChild(info);
-        newsContainer.appendChild(newsItem);
-        newsContainer.appendChild(document.createElement("hr"));
+        newsList.appendChild(newsItem);
+        newsList.appendChild(document.createElement("hr"));
 
   
       });

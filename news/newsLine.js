@@ -41,7 +41,7 @@ function showNews(index) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const newsContainer = document.getElementById("newsContainer");
+    const newsList = document.getElementById("newsList");
     const pagination = document.getElementById("pagination");
      // Array to store news data
   

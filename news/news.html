@@ -7,7 +7,7 @@
     <!-- Include Leaflet CSS and JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/lib/code/styles.css">
 </head>
     <body>
 
@@ -19,12 +19,11 @@
                 <button class="tablinks" onclick=" location.href = '../image_library/library.html';">OPEN LIBRARY</button>
                 <button class="tablinks" onclick="location.href = '../tools/tools.html';">TOOLS</button>
                 <button class="tablinks" onclick="location.href = '../contact/contact.html';">CONTACT</button>
-                <button class="tablinks">LOGIN</button>
             </div>
 
-            <div class = "spacer" style = "height: 10px;"> </div>
-            <h1 style="color: white; padding: 0% 12.5% 0% 12.5%;">NEPal - Northern European Palynology Database</h1>
-            <p style="color: white; padding: 0% 12.5% 0% 12.5%; font-size: large;"> 
+            <div class = "spacer" style = "height: 40px;"> </div>
+            <h1 class = "title">NEPal - Northern European Palynology Database</h1>
+            <p class="subtitle"> 
                 The Open-Source Plattform for Automated Pollen Analysis
             </p>
             <div class = "spacer" style="height: 30px;"> </div>
@@ -33,7 +32,7 @@
                 <hr>
             </div>
             <div class="Content" style="background-color: white; padding: 20px 12.5% 20px 12.5%;">
-                <div class = "newsContainer" id = "newsContainer"></div>
+                <div class = "newsList" id = "newsList"></div>
                 <script src="./newsLetter.js"></script>
             </div>
             <div class="Content" style="background-color: rgb(64, 85, 81); color:white;padding: 20px 12.5% 20px 12.5%;">
@@ -63,49 +62,35 @@
             </div>
             <div class = "spacer" style="height: 30px;"> </div>
         </div>
-        <div class="Footer">
+        <div class = "Footer">
             <div class = "spacer" style="height: 20px;"> </div>
-            <div class="row">
-                <div class="column">
+            <div class="FooterRow">
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../news/news.html'">NEWS</h3>
                     <hr style="width:20%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                    <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024" class = "a1">Newsletter</a>
+                    <br style="line-height: 20px;">
+                    <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References" class = "a1">Publications</a>
+                    <br>
+                    <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen" class = "a1">External References</a>
                 </div>
-                <div class="column">
+
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../information/about.html#:~:text=Automated%20Pollen%20Analysis-,ABOUT%20US,-The%20aim%20of'">ABOUT US</h3>
                     <hr style="width:33%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
+                    <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a" class = "a1">Why Palynology?</a>
+                    <br>
+                    <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS" class = "a1">Portfolio</a>
                 </div>
-                <div class="column">
+
+                <div class="FooterColumn">
                     <h3 style="line-height: 5px;" onclick="location.href='../contact/contact.html'">CONTACT</h3>
                     <hr style="width:32%;text-align:left;margin-left:0; height:2px; border-color: black; background-color: black">
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="linkBox">
-                        <a href="../news/news.html#:~:text=Automated%20Pollen%20Analysis-,NEWS,-05/06/2024">Newsletter</a>
-                        <br style="line-height: 20px;">
-                        <a href="../news/news.html#:~:text=Read%20more-,Publications,-External%20References">Publications</a>
-                        <br>
-                        <a href="..news/news.html#:~:text=Publications-,External%20References,-The%20Global%20Pollen">External References</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="linkBox">
-                        <a href="../information/about.html#:~:text=expertise%20among%20palynologists.-,Why%20palynology%3F,-Palynology%20plays%20a">Why Palynology?</a>
-                        <br>
-                        <a href="../information/about.html#:~:text=peak%20pollen%20times.-,PORTFOLIO,-NEWS">Portfolio</a>
-                    </div>
-                </div>
-                <div class="column">
-                    <p style="margin: 0%;">
-                        Data Manager: Björn Gedda <br>
-                        E-MAIL: <a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
-                        <p style="line-height: 50px;"></p>
-
-                        Project Manager: Robin von Allmen <br/>
-                        E-MAIL: <a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
-
-                    </p>
+                    <a style="margin: 0%;">
+                            Data Manager:<br>Björn Gedda<br><a href = "mailto:bjorn.gedda@nrm.se">bjorn.gedda@nrm.se</a><br>
+                            <p style="line-height: 10px;"></p>
+                            Project Manager:<br>Robin von Allmen<br><a href = "mailto:robinvonallmen@hotmail.com">robinvonallmen@hotmail.com</a>
+                    </a>
                 </div>
             </div>
             <div class = "spacer" style="height: 40px;"> </div>

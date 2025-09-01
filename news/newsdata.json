@@ -1,6 +1,15 @@
 {
     "newscontainer": [
       {
+        "imageURL": "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJrbmlmZV9zd2lzc19hcm15X2tuaWZlLWltYWdlLWt5YmRiNDV2LmpwZw.jpg",
+        "newsTitle": "New tool available!",
+        "newsDescription": "To further the data collecting efforts of digitzed pollen slides, we developed an interactive tool that opens up inside of a browser which uses HSV color space filtering and morphological filters to segment individual pollen grains. Try it out!",
+        "newsLink": "http://northerneuropeanpalynology.github.io/tools/tools.html#:~:text=paleoecological%20pollen%20assemblages.-,Segmentation,-tool%20based%20on",
+        "linkText": "Continue to Text",
+        "linkActive": false,
+        "date" : "01/09/2025"
+      },
+      {
         "imageURL": "https://free-vectors.net/_ph/1/324677358.jpg",
         "newsTitle": "Test your Knowledge!",
         "newsDescription": "As part of the NEPal initiative, we also are encouraged to train researcher, students and private users to identify pollen. We therefore curated an online Quiz testing your knowledge of pollen morphologies. In the future we would like to integrate this approach with our database such that experts can confirm the automated classification results.",

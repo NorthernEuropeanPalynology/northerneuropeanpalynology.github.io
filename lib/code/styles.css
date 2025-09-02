@@ -302,6 +302,39 @@ h1{
 }
 
 
+.scrollable-container {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.scrollable-container > .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+.scrollable-container > .item img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
+#searchInput {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+
 @media (max-width: 768px) {
   .ABOUTPageContent > div {
       flex-direction: column; 
